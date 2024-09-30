@@ -18,6 +18,7 @@ import { ListaDeCompraService } from 'src/app/service/lista-de-compra.service';
 export class ItemComponent implements OnInit, OnChanges {
   @Input() item!: Item;
   @Output() emitindoItemParaEditar = new EventEmitter();
+  @Output() emitindoIdParaDeletar = new EventEmitter();
 
   faPen = faPen;
   faTrash = faTrash;
@@ -38,5 +39,9 @@ export class ItemComponent implements OnInit, OnChanges {
     } else {
       this.item.comprado = true;
     }
+  }
+
+  deletarItem() {
+    this.emitindoIdParaDeletar.emit(this.item.id);
   }
 }
