@@ -1,27 +1,53 @@
-# LifeCycle
+Shopping List é um projeto simples, de lista de tarefas, construído em Angular, que foi usada para testar os ciclos de vida do framework.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+## 📸 Captura de Tela
 
-## Development server
+![Preview](https://github.com/bermarques/shopping-list/raw/main/src/assets/preview.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🛠️ Tecnologias Utilizadas
 
-## Code scaffolding
+- **Angular** - Framework front-end para a construção da interface de usuário.
+- **HTML5** - Linguagem de marcação para a estruturação do conteúdo.
+- **CSS3** - Estilos visuais para a aplicação.
+- **TypeScript** - Linguagem de programação principal usada no Angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Como Rodar o Projeto
 
-## Build
+### Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Node.js** e **npm** instalados no sistema.
+- **Angular CLI** (caso ainda não tenha):
+  ```
+  npm install -g @angular/cli@17.0.3
+  ```
 
-## Running unit tests
+### Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone o repositório do GitHub:
 
-## Running end-to-end tests
+   ```bash
+   git clone git@github.com:bermarques/shopping-list.git
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navegue até o diretório do projeto:
 
-## Further help
+   ```bash
+   cd indexa
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Rode a aplicação localmente:
+
+   ```bash
+   ng serve
+   ```
+
+5. Abra o navegador e acesse a URL:
+   ```
+   http://localhost:4200
+   ```

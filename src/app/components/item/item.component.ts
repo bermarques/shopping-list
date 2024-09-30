@@ -3,6 +3,7 @@ import {
   EventEmitter,
   Input,
   OnChanges,
+  OnDestroy,
   OnInit,
   Output,
 } from '@angular/core';
@@ -15,7 +16,7 @@ import { ListaDeCompraService } from 'src/app/service/lista-de-compra.service';
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.css'],
 })
-export class ItemComponent implements OnInit, OnChanges {
+export class ItemComponent implements OnInit, OnChanges, OnDestroy {
   @Input() item!: Item;
   @Output() emitindoItemParaEditar = new EventEmitter();
   @Output() emitindoIdParaDeletar = new EventEmitter();
@@ -44,4 +45,6 @@ export class ItemComponent implements OnInit, OnChanges {
   deletarItem() {
     this.emitindoIdParaDeletar.emit(this.item.id);
   }
+
+  ngOnDestroy() {}
 }
