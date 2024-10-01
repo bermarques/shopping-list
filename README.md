@@ -32,7 +32,7 @@ Shopping List é um projeto simples, de lista de tarefas, construído em Angular
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd indexa
+   cd shopping-list
    ```
 
 3. Instale as dependências:
